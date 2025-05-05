@@ -9,8 +9,8 @@ jobs:
         uses: step-security/harden-runner@v2
         with:
           egress-policy: block
-          allowed-endpoints: >
-            https://google.com
+          allowed-endpoints: |
+            google.com:443
       - name: curl google
         run: curl https://google.com
   deny-google:
