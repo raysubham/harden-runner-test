@@ -11,6 +11,8 @@ jobs:
           egress-policy: block
           allowed-endpoints: >
             https://google.com
+      - name: curl google
+        run: curl https://google.com
   deny-google:
     runs-on: ubuntu-latest
     steps:
@@ -18,3 +20,5 @@ jobs:
         uses: step-security/harden-runner@v2
         with:
           egress-policy: block
+      - name: curl google
+        run: curl https://google.com
