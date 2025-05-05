@@ -1,0 +1,20 @@
+name: Harden Runner Test
+run-name: testing out harden-runner
+on: [push]
+jobs:
+  allow-google:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            https://google.com
+  deny-google:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: block
