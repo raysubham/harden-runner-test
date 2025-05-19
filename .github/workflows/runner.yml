@@ -23,4 +23,4 @@ jobs:
       - name: curl google
         run: curl https://google.com
       - name: curl ublock
-        run: curl https://ublockorigin.com/
+        run: curl https://ublockorigin.com
