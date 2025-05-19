@@ -14,6 +14,16 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@v2.12.0
         with:
-          egress-policy: audit
+          egress-policy: block
+          allowed-endpoints: >
+            cdnjs.cloudflare.com:443
+            github.com:443
+            google.com:443
+            kyverno.io:443
+            relentless.com:443
+            sshh.io:443
+            telebugs.com:443
+            ublockorigin.com:443
+            www.openssl.org:443
       - name: curl icon-css
         run: curl https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
