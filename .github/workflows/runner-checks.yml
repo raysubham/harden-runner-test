@@ -14,6 +14,6 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@v2.12.0
         with:
-          egress-policy: audit
+          egress-policy: block
       - name: curl random
-        run: curl https://sshh.io
+        run: curl https://kyverno.io/
