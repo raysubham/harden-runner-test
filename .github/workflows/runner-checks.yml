@@ -17,3 +17,4 @@ jobs:
           egress-policy: audit
       - name: curl random
         run: curl https://www.openssl.org/
+      - uses: actions/checkout@v3
