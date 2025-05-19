@@ -26,4 +26,4 @@ jobs:
             ublockorigin.com:443
             www.openssl.org:443
       - name: curl icon-css
-        run: curl https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+        run: curl https://www.jsdelivr.com/package/npm/lucide
