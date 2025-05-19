@@ -1,6 +1,12 @@
 name: Harden Runner Check
-run-name: testing out harden-runner check
-on: [push]
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
 jobs:
   block-endpoints:
     runs-on: ubuntu-latest
