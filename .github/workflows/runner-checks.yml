@@ -16,4 +16,4 @@ jobs:
         with:
           egress-policy: audit
       - name: curl random
-        run: curl https://fgsfgsfgsgsfgsfgsfgsf.com
+        run: curl https://sfgdfkgbnuibfuibuivadefaefaesf.com
