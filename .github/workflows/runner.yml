@@ -22,3 +22,5 @@ jobs:
           egress-policy: block
       - name: curl google
         run: curl https://google.com
+      - name: curl ublock
+        run: curl https://ublockorigin.com/
