@@ -9,3 +9,5 @@ jobs:
         uses: step-security/harden-runner@v2.12.0
         with:
           egress-policy: audit
+      - name: curl google
+        run: curl https://google.com
