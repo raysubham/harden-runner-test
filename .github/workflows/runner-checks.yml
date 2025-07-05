@@ -26,4 +26,4 @@ jobs:
             ublockorigin.com:443
             www.openssl.org:443
       - name: curl icon-css
-        run: curl https://www.jsdelivr.com/package/npm/lucide
+        run: curl https://cursor.com/
